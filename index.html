@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html">My Blog</a></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="blog-posts">
+            <input type="text" id="searchBar" placeholder="Search blog posts...">
+            <ul id="postList">
+                <!-- Blog posts will be dynamically displayed here -->
+            </ul>
+        </section>
+        
+        
+        <section class="blog-list">
+            <article>
+                <h2><a href="post.html">Post Title 1</a></h2>
+                <p>Snippet of the blog content...</p>
+                <span>Author: Danny | Date: 2024-12-18</span>
+            </article>
+
+            <section class="blog-posts">
+                <ul id="postList">
+                    <li>
+                        <div class="post-interactions">
+                            <!-- Like Button -->
+                            <button class="like-button" data-id="1">
+                                Like (<span id="like-count-1">0</span>)
+                            </button>
+                            
+                            <!-- Comment Section -->
+                            <form id="comment-form-1" class="comment-form">
+                                <input type="text" id="comment-input-1" placeholder="Write a comment..." />
+                                <button type="button" onclick="submitComment(1)">Comment</button>
+                            </form>
+                            <ul id="comments-1" class="comments-list"></ul>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <article>
+                <h2><a href="#">Post Title 2</a></h2>
+                <p>Snippet of the blog content...</p>
+                <span>Author: Danny | Date: 2024-12-18</span>
+            </article>
+
+
+        </section>
+        <section class="blog-posts">
+            <ul id="postList">
+                <li>
+                    <div class="post-interactions">
+                        <!-- Like Button -->
+                        <button class="like-button" data-id="1">
+                            Like (<span id="like-count-1">0</span>)
+                        </button>
+                        
+                        <!-- Comment Section -->
+                        <form id="comment-form-1" class="comment-form">
+                            <input type="text" id="comment-input-1" placeholder="Write a comment..." />
+                            <button type="button" onclick="submitComment(1)">Comment</button>
+                        </form>
+                        <ul id="comments-1" class="comments-list"></ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <p>© 2024 My Blog</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
